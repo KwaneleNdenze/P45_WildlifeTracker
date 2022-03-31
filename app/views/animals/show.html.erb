@@ -1,0 +1,19 @@
+
+<div class="jumbotron">
+  <h1 class="display-4"><%= @animal.name %></h1>
+  <p class="lead"><%= link_to 'Index', animals_path %> | <%= link_to 'Edit', edit_animal_path(@animal)%> | <%= link_to 'Destroy', animal_path(@animal),
+              method: :delete,
+              data: { confirm: 'Are you sure?' }%> </p>
+
+  
+
+
+  <hr class="my-4">
+
+  <h2 class="pb-5">Sightings</h2>
+
+  <p><%= render @animal.sightings %></p>
+ 
+  
+  <%= link_to 'Add New Sighting', new_animal_sighting_path(@animal), :class => "btn btn-primary btn-md" %>
+</div>

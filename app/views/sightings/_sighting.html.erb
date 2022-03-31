@@ -1,0 +1,30 @@
+
+  <p>
+    <strong>Date:</strong>
+    <%= sighting.date %>
+  </p>
+ 
+  <p>
+    <strong>Longitude:</strong>
+    <%= sighting.longitude %>
+  </p>
+
+  <p>
+    <strong>Latitude:</strong>
+    <%= sighting.latitude %>
+  </p>
+
+  <p>
+    <strong>Region:</strong>
+    <%= sighting.region %>
+  </p>
+
+  
+
+  <p>
+  <%= link_to 'Destroy Sighting', [sighting.animal, sighting],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+  </p>
+
+  <hr />

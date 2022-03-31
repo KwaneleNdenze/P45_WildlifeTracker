@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <h1 class="display-4"><%= @region.name %></h1>
+  <p class="lead"><%= link_to 'Index', regions_path %> | <%= link_to 'Edit', edit_region_path(@region)%> | <%= link_to 'Destroy', region_path(@region),
+              method: :delete,
+              data: { confirm: 'Are you sure?' }%></p>
+  <hr class="my-4">
+  <p></p>
+  <a class="btn btn-primary btn-md" href="#" role="button">Add New Sighting</a>
+</div>
+
+<%= link_to 'Index', regions_path %> | <%= link_to 'Edit', edit_region_path(@region)%> | <%= link_to 'Destroy', region_path(@region),
+              method: :delete,
+              data: { confirm: 'Are you sure?' }%>

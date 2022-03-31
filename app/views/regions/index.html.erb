@@ -1,0 +1,32 @@
+<h1> Regions </h1>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Region</th>
+      <th scope="col"></th>
+      
+    </tr>
+  </thead>
+  <tbody>
+  <% @regions.each do |region| %>
+    <tr>
+      <td><%= region.name %></td>
+      <td><%= link_to 'Show', region_path(region) %> | <%= link_to 'Edit', edit_region_path(region)%> | <%= link_to 'Destroy', region_path(region),
+              method: :delete,
+              data: { confirm: 'Are you sure?' }%> </td>
+    </tr>
+  <% end %>
+    
+  </tbody>
+</table>
+ 
+
+<p>
+<%= link_to 'Insert New Region', new_region_path %>
+</p>
+
+<p>
+<%= link_to 'Go To Animals', animals_path %>
+</p>
